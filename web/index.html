@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10151e">
+  <link rel="icon" href="data:,">
+  <title>Mancebo Robles · El Imperio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="city" aria-label="Ciudad de Puerto Bruma. Usa WASD para moverte y E para interactuar."></canvas>
+  <div id="vignette"></div>
+  <header id="hud" hidden>
+    <div class="brand"><span class="monogram">MR<span>®</span></span><div>EL IMPERIO<small>PUERTO BRUMA</small></div></div>
+    <div class="metrics">
+      <div class="metric cash"><small>EFECTIVO</small><strong id="cash">500 €</strong></div>
+      <div class="metric"><small>REPUTACIÓN</small><strong id="rep">0 <em>/ 100</em></strong></div>
+      <div class="metric pressure"><small id="heat-label">SOSPECHA · TRANQUILO</small><div class="heat-track"><span id="heat-bar"></span></div></div>
+    </div>
+    <button id="pause-button" class="icon-button" title="Pausa (Esc)" aria-label="Pausa">||</button>
+  </header>
+  <aside id="dossier" hidden>
+    <div class="eyebrow">TU SIGUIENTE MOVIMIENTO <span id="mission-count">01 / 12</span></div>
+    <div class="quest-line"></div>
+    <h2 id="mission-title">Un bizum pendiente</h2>
+    <p id="mission-description"></p>
+    <div class="reward" id="mission-reward"></div>
+    <button id="track-button" class="track-button">→ <span id="track-label">Monfe · 51 m</span></button>
+    <div class="divider"></div>
+    <div class="eyebrow">EN TU MOCHILA <span id="capacity-label">0 / 20</span></div>
+    <div id="inventory-mini"></div>
+    <div class="divider"></div>
+    <div class="portfolio"><small>PATRIMONIO</small><strong id="wealth">500 €</strong><div class="wealth-track"><span id="wealth-bar"></span></div><p>OBJETIVO 15.000 € · <span id="property-count">0</span>/3 NEGOCIOS</p></div>
+    <div class="save-indicator" id="save-status">◌ Autoguardado activo</div>
+  </aside>
+  <div id="location" hidden><span class="location-dot"></span><div><strong id="district-name">La Persiana</strong><small id="city-time">DÍA 01 · 21:00</small></div><button id="map-button" title="Mapa (M)">M →</button></div>
+  <div id="controls" hidden><span><kbd>W A S D</kbd> Mover</span><span><kbd>E</kbd> Hablar</span><span><kbd>I</kbd> Mochila</span><span><kbd>M</kbd> Mapa</span></div>
+  <div id="interaction-hint" hidden><kbd>E</kbd> <span></span></div>
+  <div id="notifications" aria-live="polite"></div>
+  <div id="menu" class="screen">
+    <div class="menu-shade"></div>
+    <div class="menu-content">
+      <div class="eyebrow menu-eyebrow"><span class="live-dot"></span> PUERTO BRUMA · UNA NOCHE CUALQUIERA</div>
+      <h1>MANCEBO<br>ROBLES<span>.</span></h1>
+      <div class="title-sub"><span></span> EL IMPERIO <span></span></div>
+      <p class="tagline">La ciudad no duerme.<br><b>Tu imperio tampoco.</b></p>
+      <div class="menu-actions">
+        <button id="new-game" class="primary">Empezar de cero <span>→</span></button>
+        <button id="continue-game" class="secondary" disabled>Continuar partida <span>→</span></button>
+        <button id="settings-button" class="text-button">⚙ Ajustes y controles</button>
+      </div>
+      <p class="menu-note">500 €. Un móvil. Una ciudad por conquistar.</p>
+    </div>
+    <div class="menu-stamp">UNA HISTORIA<br>DE BARRIO.<span>EST. 2026 — COSTA MEDITERRÁNEA</span></div>
+    <footer>Un mundo y personajes completamente ficticios.<span>EXPLORA · NEGOCIA · CONSTRUYE</span></footer>
+  </div>
+  <div id="panel-overlay" class="overlay" hidden><section id="panel" class="panel" role="dialog" aria-modal="true" aria-label="Interacción"></section></div>
+  <div id="fatal" hidden><h2>No se pudo iniciar el juego</h2><p id="fatal-text"></p></div>
+  <script src="content.js"></script>
+  <script src="model.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

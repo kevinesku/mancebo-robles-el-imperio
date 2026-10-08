@@ -1,0 +1,11 @@
+architecture: Windows x86_64 / PE32+
+size: 104726976
+pck_size: 67508
+sha256: a72fc96dc3bb92ba712d8362d4aaf7d91879173b977e656c27da0554c87611d4
+Esta comprobación estructural no ejecuta el juego en Windows.
+
+Motor: 4.6.3.stable.official.7d41c59c4
+Plantillas: 4.6.3-stable (archivo oficial con SHA-512 verificado)
+Arranque del PCK exportado con el motor local: correcto.
+GODOT SMOKE PASS: 107 checks (economy, progression, police, saves, ten dialogs, all screens).
+La ejecución del ejecutable PE en Windows requiere una comprobación en Windows.

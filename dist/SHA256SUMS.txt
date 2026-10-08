@@ -1,0 +1,5 @@
+63b3ff9d8f98d4b25ff2d3113925326f8b3bbc9a93f44ef3d8646e04f5df369b  Mancebo-Robles-Windows.zip
+37a0683f73160015c14c73ec3fe58e7870f10e5166e5f09a89b80097680c760f  Mancebo-Robles-HTML.zip
+87574bb329564a3b9a61a39917623751c429f27cb71377b232a683911a2c22ee  Mancebo-Robles-Fuentes.zip
+a72fc96dc3bb92ba712d8362d4aaf7d91879173b977e656c27da0554c87611d4  windows/Mancebo-Robles-El-Imperio.exe
+4629a0c79a9e961affb43fb68062745f40098a8ce8762eed36d8e8466faa0f78  html/Mancebo-Robles-El-Imperio.html
