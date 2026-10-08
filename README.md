@@ -4,6 +4,14 @@ Videojuego jugable de economía, exploración y estrategia en una ciudad mediter
 
 ## Jugar
 
+**[Descargar v0.1.0 en GitHub Releases](https://github.com/kevinesku/mancebo-robles-el-imperio/releases/tag/v0.1.0)**
+
+- [Descarga directa Windows](https://github.com/kevinesku/mancebo-robles-el-imperio/releases/download/v0.1.0/Mancebo-Robles-Windows.zip)
+- [Descarga directa HTML](https://github.com/kevinesku/mancebo-robles-el-imperio/releases/download/v0.1.0/Mancebo-Robles-HTML.zip)
+- [Descarga directa Godot y fuentes](https://github.com/kevinesku/mancebo-robles-el-imperio/releases/download/v0.1.0/Mancebo-Robles-Fuentes.zip)
+
+Los tres archivos son los ZIP originales: se descargaron desde Releases y se verificaron sus SHA-256. Si alguna vez falla el enlace de un artefacto del chat, puedes recuperarlos desde GitHub; consulta [DOWNLOADS.md](DOWNLOADS.md).
+
 - **Windows 64 bits:** descomprime `dist/Mancebo-Robles-Windows.zip` y abre `Mancebo-Robles-El-Imperio.exe`. Los recursos están incrustados: no necesitas instalar Godot ni descargar nada para jugar. Usa un equipo con OpenGL 3.3.
 - **HTML:** abre `dist/html/Mancebo-Robles-El-Imperio.html` en un navegador de escritorio. Es un único archivo con el juego completo. También está en `dist/Mancebo-Robles-HTML.zip`.
 - **Fuente editable:** descomprime `dist/Mancebo-Robles-Fuentes.zip`, abre `godot/project.godot` con Godot **4.6.3** y pulsa F5. La versión web está en `web/`.
